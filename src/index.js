@@ -1,1 +1,3 @@
-console.log("Webpack is working as expected!");
+import { homePage } from "./home";
+
+homePage();
