@@ -32,12 +32,6 @@ const homePage = () => {
 	mainImg.className = "main-img";
 	const h = document.createElement("H1");
 	h.textContent = "Welcome to Wing Slutz!";
-
-	// const heroImg = document.createElement("img");
-	// heroImg.src = "media/wingSlutz.png";
-	// heroImg.setAttribute("alt", "Two happy men eating wings in restuarant");
-
-	mainImg.style.backgroundImage = "media/wingSlutz.png";
 	mainImg.appendChild(h);
 
 	const specials = document.createElement("div");
@@ -99,7 +93,7 @@ const homePage = () => {
 	const subHeaderTwo = document.createElement("div");
 	subHeaderTwo.className = "sub-header";
 	subHeaderTwo.textContent =
-		"Try a bucket of our delicious wings and famous slut sauce";
+		"Try a bucket of our delicious wings and world famous Slutz Sauce";
 	cardTwo.appendChild(iconTwo);
 	cardTwo.appendChild(headerTwo);
 	cardTwo.appendChild(subHeaderTwo);

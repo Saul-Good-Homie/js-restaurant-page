@@ -141,11 +141,17 @@ const menuPage = () => {
 	sidesContainer.appendChild(onionRings);
 	sides.appendChild(sidesContainer);
 
+	// create and append footer elements
+	const footer = document.createElement("footer");
+	footer.innerHTML =
+		'<p> This site is a learning project by <a href="https://twitter.com/saul_good_homie">Saul Belisle</a>, view the code on <a href="#">Github</a>.</p>';
+
 	//append all primary children to content
 	content.appendChild(topNav);
 	content.appendChild(sizeContainer);
 	content.appendChild(sauceGrid);
 	content.appendChild(sides);
+	content.appendChild(footer);
 };
 
 export { menuPage };

@@ -225,6 +225,7 @@ img {
 /* footer section */
 footer {
 	/* position: fixed; */
+	height: 30px;
 	left: 0;
 	bottom: 0;
 	padding-bottom: 3px;
@@ -337,4 +338,31 @@ footer a:hover {
 	border: 1px solid #fb8b24;
 
 	cursor: pointer;
+}
+
+/* Contact us page */
+
+#contact-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-height: 87vh;
+	margin: auto;
+}
+
+/* tablets and laptop screens */
+@media (max-width: 768px) {
+	#contact-container {
+		width: 80%;
+		text-align: center;
+	}
+}
+
+/* Mobile device screens */
+@media (max-width: 480px) {
+	#contact-container {
+		width: 80%;
+		justify-content: center;
+		text-align: center;
+	}
 }
