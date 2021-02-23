@@ -10,10 +10,13 @@ const homePage = () => {
 	const ul = document.createElement("ul");
 	const home = document.createElement("li");
 	home.textContent = "Home";
+	home.id = "home";
 	const menu = document.createElement("li");
 	menu.textContent = "Menu";
+	menu.id = "menu";
 	const contact = document.createElement("li");
 	contact.textContent = "Contact";
+	contact.id = "contact";
 
 	ul.appendChild(home);
 	ul.appendChild(menu);
@@ -28,7 +31,13 @@ const homePage = () => {
 	const mainImg = document.createElement("div");
 	mainImg.className = "main-img";
 	const h = document.createElement("H1");
-	h.textContent = "Dusty's Dive Bar!";
+	h.textContent = "Welcome to Wing Slutz!";
+
+	// const heroImg = document.createElement("img");
+	// heroImg.src = "media/wingSlutz.png";
+	// heroImg.setAttribute("alt", "Two happy men eating wings in restuarant");
+
+	mainImg.style.backgroundImage = "media/wingSlutz.png";
 	mainImg.appendChild(h);
 
 	const specials = document.createElement("div");
@@ -37,16 +46,16 @@ const homePage = () => {
 	const specialOne = document.createElement("div");
 	specialOne.className = "special-1";
 	const specialOneHeader = document.createElement("H3");
-	specialOneHeader.textContent = "$1.99";
+	specialOneHeader.textContent = "$14.99";
 	const specialOneSubHeader = document.createElement("H4");
-	specialOneSubHeader.textContent = "Tacos";
+	specialOneSubHeader.textContent = "Wing Buckets";
 	specialOne.appendChild(specialOneHeader);
 	specialOne.appendChild(specialOneSubHeader);
 
 	const specialTwo = document.createElement("div");
 	specialTwo.className = "special-2";
 	const specialTwoHeader = document.createElement("H3");
-	specialTwoHeader.textContent = "$12.00";
+	specialTwoHeader.textContent = "$10.00";
 	const specialTwoSubHeader = document.createElement("H4");
 	specialTwoSubHeader.textContent = "Domestic Pitchers";
 	specialTwo.appendChild(specialTwoHeader);
