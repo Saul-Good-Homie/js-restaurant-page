@@ -6,4 +6,4 @@ Created by Saul Belisle, follow me on Twitter: [@saul_good_homie](https://twitte
 
 View this project [online]()
 
-![Screenshot of finished webpage](/media/final-screenshot.png)
+![Screenshot of finished webpage](/media/final-screenshot.png?raw=true)
