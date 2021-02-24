@@ -37,7 +37,7 @@ const contactPage = () => {
 	address.innerHTML = "Address: Main Park, Brooklyn NY, 99th Precinct";
 
 	const img = document.createElement("img");
-	img.src = "dist/media/brooklyn.png";
+	img.src = "media/brooklyn.png";
 	img.setAttribute("alt", "Screenshot of google maps over brooklyn");
 
 	contactContainer.appendChild(phone);
