@@ -95,7 +95,7 @@ const homePage = () => {
 	const subHeaderTwo = document.createElement("div");
 	subHeaderTwo.className = "sub-header";
 	subHeaderTwo.textContent =
-		"Try a bucket of our delicious wings and world famous Slutz Sauce";
+		"Try a bucket of our delicious wings and world famous Slut Sauce";
 	cardTwo.appendChild(iconTwo);
 	cardTwo.appendChild(headerTwo);
 	cardTwo.appendChild(subHeaderTwo);
