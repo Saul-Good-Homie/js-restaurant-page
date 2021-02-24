@@ -73,6 +73,7 @@ a.hover {
 
 body {
 	margin: 10px;
+	max-width: 1280px;
 }
 
 * {
@@ -271,6 +272,7 @@ img {
 
 .review-grid {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
 	margin-bottom: 1rem;
 }
