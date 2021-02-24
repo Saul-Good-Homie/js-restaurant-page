@@ -6,4 +6,4 @@ Created by Saul Belisle, follow me on Twitter: [@saul_good_homie](https://twitte
 
 View this project [online](https://saul-good-homie.github.io/js-restaurant-page/)
 
-![Screenshot of finished webpage](dist/media/final-screenshot.png?raw=true)
+![Screenshot of finished webpage](media/final-screenshot.png?raw=true)
