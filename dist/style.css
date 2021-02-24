@@ -133,7 +133,7 @@ body {
 	height: 100%;
 	display: flex;
 	align-items: center;
-	background-image: url("media/wings.png");
+	background-image: url("dist/media/wings.png");
 	background-repeat: no-repeat;
 	background-size: contain;
 }
