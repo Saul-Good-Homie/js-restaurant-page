@@ -51,9 +51,9 @@ const menuPage = () => {
 	const saucesContainer = document.createElement("div");
 	saucesContainer.className = "sauceContainer";
 
-	const slutzSauce = document.createElement("div");
-	slutzSauce.className = "sauces";
-	slutzSauce.innerHTML = "Slutz Sauce";
+	const slutSauce = document.createElement("div");
+	slutSauce.className = "sauces";
+	slutSauce.innerHTML = "Slut Sauce";
 
 	const a = document.createElement("div");
 	a.className = "sauces";
@@ -99,7 +99,7 @@ const menuPage = () => {
 	k.className = "sauces";
 	k.innerHTML = "Dry Rub aka Title of your Sex Tape";
 
-	saucesContainer.appendChild(slutzSauce);
+	saucesContainer.appendChild(slutSauce);
 	saucesContainer.appendChild(a);
 	saucesContainer.appendChild(b);
 	saucesContainer.appendChild(c);

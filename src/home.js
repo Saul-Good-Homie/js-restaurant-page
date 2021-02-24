@@ -8,6 +8,7 @@ const homePage = () => {
 	topNav.id = "top-nav";
 
 	const ul = document.createElement("ul");
+	ul.id = "top-nav-ul";
 	const home = document.createElement("li");
 	home.textContent = "Home";
 	home.id = "home";
@@ -30,8 +31,9 @@ const homePage = () => {
 
 	const mainImg = document.createElement("div");
 	mainImg.className = "main-img";
-	const h = document.createElement("H1");
-	h.textContent = "Welcome to Wing Slutz!";
+	const h = document.createElement("div");
+	h.className = "title";
+	h.innerHTML = "<h1>Welcome to Wing Slutz!</h1>";
 	mainImg.appendChild(h);
 
 	const specials = document.createElement("div");
@@ -105,10 +107,11 @@ const homePage = () => {
 	iconThree.innerHTML = '<i class="fas fa-question-circle"></i>';
 	const headerThree = document.createElement("div");
 	headerThree.className = "header";
-	headerThree.textContent = "Trivia";
+	headerThree.textContent = "Sauce Launch Parties";
 	const subHeaderThree = document.createElement("div");
 	subHeaderThree.className = "sub-header";
-	subHeaderThree.textContent = "Join us each Tuesday for Trivia Nights!";
+	subHeaderThree.textContent =
+		"Join us on the first Sunday of each month for a new sauce launch!";
 	cardThree.appendChild(iconThree);
 	cardThree.appendChild(headerThree);
 	cardThree.appendChild(subHeaderThree);
@@ -134,18 +137,56 @@ const homePage = () => {
 	cards.appendChild(cardThree);
 	cards.appendChild(cardFour);
 
-	//create and append lower hero image
+	//create and append customer reviews
+	const reviewContainer = document.createElement("div");
+	reviewContainer.id = "review-container";
+	reviewContainer.innerHTML = "<h1>See what our Fans are Saying!</h1>";
 
-	const bigHero = document.createElement("div");
-	bigHero.id = "big-hero";
-	const bigHeroImg = document.createElement("div");
-	bigHeroImg.className = "big-hero-image";
-	const img = document.createElement("img");
-	img.src = "media/wings.png";
-	img.setAttribute("alt", "Stock photo of bar style chicken wings");
+	const subContainer = document.createElement("div");
+	subContainer.className = "review-grid";
 
-	bigHeroImg.appendChild(img);
-	bigHero.appendChild(bigHeroImg);
+	const review1 = document.createElement("div");
+	review1.className = "reviews";
+	const person1 = document.createElement("img");
+	person1.src = "media/wingSlutz.png";
+	person1.setAttribute("alt", "Hitchcock and Scully eating wings");
+	const feedback1 = document.createElement("div");
+	feedback1.className = "feedback";
+	feedback1.innerHTML = "It's time to sauce up!";
+
+	review1.appendChild(person1);
+	review1.appendChild(feedback1);
+	subContainer.appendChild(review1);
+
+	const review2 = document.createElement("div");
+	review2.className = "reviews";
+	const person2 = document.createElement("img");
+	person2.src = "media/rockSolid.webp";
+	person2.setAttribute("alt", "Cops use wing sauce as bullet proof vest");
+	const feedback2 = document.createElement("div");
+	feedback2.className = "feedback";
+	feedback2.innerHTML =
+		"If you don't think the slut sauce is solid, then you might want to talk to my rock-hard arteries.";
+
+	review2.appendChild(person2);
+	review2.appendChild(feedback2);
+	subContainer.appendChild(review2);
+
+	const review3 = document.createElement("div");
+	review3.className = "reviews";
+	const person3 = document.createElement("img");
+	person3.src = "media/youngGuns.webp";
+	person3.setAttribute("alt", "Young Hitchcock and Scully eating wings");
+	const feedback3 = document.createElement("div");
+	feedback3.className = "feedback";
+	feedback3.innerHTML =
+		"It's perfect for when you need some protein to fuel your hard body.";
+
+	review3.appendChild(person3);
+	review3.appendChild(feedback3);
+	subContainer.appendChild(review3);
+
+	reviewContainer.appendChild(subContainer);
 
 	// create and append footer elements
 	const footer = document.createElement("footer");
@@ -156,7 +197,7 @@ const homePage = () => {
 	content.appendChild(topNav);
 	content.appendChild(heroOne);
 	content.appendChild(cards);
-	content.appendChild(bigHero);
+	content.appendChild(reviewContainer);
 	content.appendChild(footer);
 };
 
