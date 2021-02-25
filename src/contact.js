@@ -1,4 +1,6 @@
 const contactPage = () => {
+	import brooklyn from "/media/brooklyn.png";
+
 	console.log("I am loading the contact page");
 
 	const content = document.getElementById("content");
@@ -37,7 +39,7 @@ const contactPage = () => {
 	address.innerHTML = "Address: Main Park, Brooklyn NY, 99th Precinct";
 
 	const img = document.createElement("img");
-	img.src = "media/brooklyn.png";
+	img.src = brooklyn;
 
 	img.setAttribute("alt", "Screenshot of google maps over brooklyn");
 
