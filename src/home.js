@@ -1,5 +1,8 @@
 const homePage = () => {
 	console.log("I am loading the home page");
+	import rockSolid from "/media/rockSolid.webp";
+	import wingSlutz from "/media/wingSlutz.png";
+	import youngGuns from "media/youngGuns.webp";
 
 	const content = document.getElementById("content");
 
@@ -148,7 +151,7 @@ const homePage = () => {
 	const review1 = document.createElement("div");
 	review1.className = "reviews";
 	const person1 = document.createElement("img");
-	person1.src = "media/wingSlutz.png";
+	person1.src = wingSlutz;
 	person1.setAttribute("alt", "Hitchcock and Scully eating wings");
 	const feedback1 = document.createElement("div");
 	feedback1.className = "feedback";
@@ -161,7 +164,7 @@ const homePage = () => {
 	const review2 = document.createElement("div");
 	review2.className = "reviews";
 	const person2 = document.createElement("img");
-	person2.src = "media/rockSolid.webp";
+	person2.src = rockSolid;
 	person2.setAttribute("alt", "Cops use wing sauce as bullet proof vest");
 	const feedback2 = document.createElement("div");
 	feedback2.className = "feedback";
@@ -175,7 +178,7 @@ const homePage = () => {
 	const review3 = document.createElement("div");
 	review3.className = "reviews";
 	const person3 = document.createElement("img");
-	person3.src = "media/youngGuns.webp";
+	person3.src = youngGuns;
 	person3.setAttribute("alt", "Young Hitchcock and Scully eating wings");
 	const feedback3 = document.createElement("div");
 	feedback3.className = "feedback";
